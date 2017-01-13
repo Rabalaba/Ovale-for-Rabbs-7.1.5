@@ -1,0 +1,297 @@
+Ovale Spell Priority 7.1.5.0
+============================
+
+Changes from version 7.1.4.2:
+-----------------------------
+
+-   Fix affliction warlock
+
+-   Merge pull request #218 from kevindesmet/patch-715-fixes
+
+    Patch 715 fixes
+-   Support for prev_gcd.N.xxx
+
+-   Merge pull request #217 from kevindesmet/include-librange
+
+    include LibRangeCheck in libs.xml
+-   purify light stagger for elusive dance on trash
+
+-   Temporary fixes in ovale_hunter until fix in SimulationCraft.lua
+
+-   update scripts from simc and regenerate
+
+-   not needed, covered by the next line as well
+
+-   just not worth it keeping elusive dance up at 7%
+
+    should only consider proccing it with medium or high stagger
+
+-   simplified check for almost max charges
+
+-   Do spend charges when not taking dmg but have special delivery talent
+
+-   never be at max charges!
+
+-   weave infernal strike
+
+-   introduce PainDeficit() and MaxPain()
+
+-   pain dumps in soul_cleaved and fracture
+
+-   soul barrier
+
+-   demon spikes + demonic infusion
+
+-   updated spell info for DH
+
+-   changes to diffuse magic
+
+-   include LibRangeCheck in libs.xml
+
+    pkgmeta already adapted in 1080c138659d62e7ace70732054ac9ba474d9ac7
+
+-   Merge remote-tracking branch 'github/master'
+
+-   Merge pull request #211 from ShmooDude/patch-4
+
+    Clearcasting fix for 7.1.5
+-   Merge pull request #209 from kevindesmet/DK
+
+    Dk
+-   Merge pull request #208 from kevindesmet/Paladin
+
+    Paladin
+-   Merge pull request #207 from kevindesmet/Monk
+
+    Monk
+-   Merge pull request #206 from kevindesmet/DH
+
+    DH improvements
+-   Merge pull request #205 from kevindesmet/IsBossFight
+
+    Improving IsBossFight
+-   fix warlock
+
+-   fix warrior
+
+-   fix shaman
+
+-   Fix priest
+
+-   fix for paladin
+
+-   Fixes for rogue
+
+-   Fixes for monk
+
+-   Fix mage
+
+-   Fix hunter
+
+-   Fix Druid
+
+-   Fixes for DH
+
+-   Fixes for DK
+
+-   update to latest scripts
+
+-   Merge branch 'Monk' of https://github.com/kevindesmet/Ovale into patch-715
+
+-   Merge branch 'Paladin' of https://github.com/kevindesmet/Ovale into patch-715
+
+-   Merge branch 'DH' of https://github.com/kevindesmet/Ovale into patch-715
+
+-   Merge branch 'DK' of https://github.com/kevindesmet/Ovale into patch-715
+
+-   Incarnation Fix
+-   ) error
+
+-   soul cleave more
+
+-   use soul carver more
+
+-   Add condition TimeToDie() >= 8 for fiery brand
+
+-   Clearcasting fix for 7.1.5
+
+    Clearcasting only affects 3 abilities now.  Swipe/Brutal Slash, Shred, and Thrash
+-   do propose death strike (bonestorm may be on cd)
+
+-   only check tagged enemies to check for blood boil
+
+-   BB, just check target
+
+-   better Bonestorm usage
+
+-   Add Bonestorm talent
+
+-   fix for #122
+
+-   Add Speed check to consecration
+
+-   consecration prio if heathcliffs_immortality is equipped
+
+-   fix cooldowns when not specced into seraphim
+
+-   include LibRangeCheck-2.0 in package
+
+-   movement.distance ==> target.Distance()
+
+-   felblade genereates fury and pain
+
+-   Put felblade in main rotation
+
+-   propose felblade to get in melee range
+
+-   correct translation for cooldown.<spell>.charges_fractional
+
+-   fel barrage in main rotation
+
+-   fel barrage has 5 charges
+
+-   default throw glaive to 1 charge
+
+-   Disambiguate throw glaive
+
+-   cooldown on throw glaive
+
+-   cd on blade dance and death sweep
+
+-   chaos nova as an interrupt
+
+-   SpellInfo instead of Define, oops
+
+-   master of the glave
+
+-   rearrange artifact traits
+
+-   rearrange talents
+
+-   infernal strike offgcd
+
+-   first blood fury cost
+
+-   FR and VR back in main rotation
+
+-   Remove expel harm from main rotation
+
+-   regenerate profile
+
+-   Tag touch_of_death as cd again
+
+-   Revert "Fallback ScanTargets when we don't have a bossmod installed"
+
+    This reverts commit 25513e4d3431605ac841e182e4a1dbd61cd25ba6.
+
+-   Fallback ScanTargets when we don't have a bossmod installed
+
+-   remove the comments
+
+-   reverse that logic (oops)
+
+-   consider seraphim talent when checking sotr charges for eye of tyr
+
+-   Consider seraphim as a defensive buff as well (we know what we're doing)
+
+-   eye_of_tyr in main and aoe | simplified ProtectionCooldownTreshold
+
+-   switch around argent defender
+
+-   AW on top
+
+-   less strict sotr (or instead of and)
+
+-   typo in documentation
+
+-   harmonize name
+
+-   Now works for BigWigs
+
+-   Debug Localized name for DBM
+
+-   need to pass state
+
+-   Debugging
+
+-   Fallback ScanTargets when we don't have a bossmod installed
+
+-   Merge branch 'master' of https://github.com/Sidoine/Ovale into DK
+
+-   Merge branch 'master' of https://github.com/Sidoine/Ovale into Paladin
+
+-   Merge branch 'master' of https://github.com/Sidoine/Ovale into DH
+
+-   Merge pull request #204 from kevindesmet/DH
+
+    Dh
+-   fiery brand back in rotation
+
+-   don't recommend fiery brand
+
+-   soul cleave when defensively
+
+-   Add VengeancePlayOffensively()
+
+-   put correct ids for all sigils
+
+-   Simplify sigil of flame debuff remaining
+
+-   empty lines
+
+-   Only dump into soul cleave when not talented into fracture
+
+-   Move heal to main action
+
+-   Merge branch 'master' of https://github.com/Sidoine/Ovale into DH
+
+-   DS runic cost with ossuary
+
+-   Simplified heart strike
+
+-   simplified blood boil
+
+-   simplified ossuary
+
+-   use Rune instead of RuneCount
+
+-   Merge pull request #202 from kevindesmet/DK
+
+    Update rotation according to icy veins
+-   Merge pull request #199 from kevindesmet/monk
+
+    Monk
+-   Merge pull request #197 from kevindesmet/multispec-position-fix
+
+    Multispec position fix
+-   Add bastion of light to short cd
+
+-   and remove them!
+
+-   Rearrange talents
+
+-   Remove rightous fury
+
+-   Play with some tags
+
+-   Only meta during boss fights
+
+-   Put a text on the trinket icons
+
+-   prioritize trinkets
+
+-   check for forbearance
+
+-   Always propose long cooldowns
+
+-   checking for blessed hammer debuff is too unpredictable
+
+-   some nil reference checks
+
+-   Trigger "Ovale_OptionsChanged"
+
+-   Update rotation according to icy veins
+
+-   Include niuzao for BM
+
+-   keep 1 charge of ironskin even when not specced into black ox brew
